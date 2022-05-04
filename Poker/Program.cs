@@ -1,21 +1,8 @@
-﻿Deck d = new();
-Board b = new(d);
+﻿using Poker.Objects;
+using Poker.Structures;
 
-Hand h1 = d.DealHand();
-Hand h2 = d.DealHand();
 
-Console.WriteLine("Hand1: " + h1);
-Console.WriteLine("Hand2: " + h2);
+Table t = new Table();
 
-Console.WriteLine("Board: " + b);
-b.DealNextAction();
-
-Console.WriteLine("Board: " + b);
-b.DealNextAction();
-
-Console.WriteLine("Board: " + b);
-b.DealNextAction();
-
-Console.WriteLine("Board: " + b);
-b.DealNextAction();
+t.RunGame();
 
